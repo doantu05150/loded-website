@@ -22,11 +22,11 @@ module.exports = {
       height: {
         'fill-available': '-webkit-fill-available'
       },
-      transition: {
-        zoom: 'transform .25s ease'
+      maxHeight: {
+        '0': '0'
       },
-      transform: {
-        scale: 'scale(1.1)'
+      inset: {
+        '100ps': '100%'
       }
     },
     fontFamily: {

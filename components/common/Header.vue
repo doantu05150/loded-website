@@ -47,14 +47,19 @@
       <div class="uppercase text-5xl font-bold font-branch">loded</div>
       <div class="rh-box flex-1" />
     </div>
-    <div class="navbar flex pt-2 pb-5">
+    <div class="relative navbar flex pt-2 pb-5">
       <ul class="flex items-center mx-auto text-sm text-gray-800">
-        <li v-for="(item, id) in listNavs" :key="`nav_${id}`" class="mx-3">
-          <router-link
-            to="#"
-            class="hover:underline hover:font-medium uppercase"
-            >{{ item.title }}</router-link
-          >
+        <li
+          v-for="(item, id) in listNavs"
+          :key="`nav_${id}`"
+          class="navl hover:underline px-3"
+        >
+          <router-link to="#" class="uppercase">{{ item.title }}</router-link>
+          <d-expand-wrapper>
+            <template v-slot:content>
+              <h1>aaaa {{ id }}</h1>
+            </template>
+          </d-expand-wrapper>
         </li>
       </ul>
     </div>
@@ -62,7 +67,12 @@
 </template>
 
 <script>
+import DExpandWrapper from './HeaderExpand'
+
 export default {
+  components: {
+    DExpandWrapper
+  },
   data() {
     return {
       listNavs: [

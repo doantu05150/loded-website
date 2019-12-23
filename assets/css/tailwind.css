@@ -8,3 +8,11 @@
     transition: transform .25s ease;
   }
 }
+
+.transition-expand {
+  transition: max-height 0.2s ease-in-out;
+}
+
+.navl:hover .navl-hover\:max-h-fit {
+  max-height: fit-content;
+}
