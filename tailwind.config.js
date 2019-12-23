@@ -11,8 +11,16 @@ module.exports = {
         'header-address': '#e5e5e5'
       },
       width: {
-        'fit-content': 'fit-content',
+        'fit-content': 'fit-content'
+      },
+      maxWidth: {
         'main-wrapper': '1800px'
+      },
+      fontSize: {
+        'default-button': '0.85rem'
+      },
+      height: {
+        'fill-available': '-webkit-fill-available'
       }
     },
     fontFamily: {
