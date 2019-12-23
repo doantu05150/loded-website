@@ -4,4 +4,6 @@ export { default as DFashion } from './Fashion'
 
 export { default as DFilter } from './Filter'
 
-export { default as DBestSeller } from './BestSeller.vue'
+export { default as DBestSeller } from './BestSeller'
+
+export { default as DSales } from './Sales'

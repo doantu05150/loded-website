@@ -21,6 +21,12 @@ module.exports = {
       },
       height: {
         'fill-available': '-webkit-fill-available'
+      },
+      transition: {
+        zoom: 'transform .25s ease'
+      },
+      transform: {
+        scale: 'scale(1.1)'
       }
     },
     fontFamily: {

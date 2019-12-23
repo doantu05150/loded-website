@@ -3,16 +3,24 @@
     <d-header />
     <div class="max-w-main-wrapper mx-auto">
       <d-banner />
+      <d-sales />
       <d-fashion />
       <d-filter />
       <d-best-seller />
+      <d-footer />
     </div>
   </div>
 </template>
 
 <script>
-import { DHeader } from '~/components/common'
-import { DBanner, DFashion, DFilter, DBestSeller } from '~/components/home'
+import { DHeader, DFooter } from '~/components/common'
+import {
+  DBanner,
+  DFashion,
+  DFilter,
+  DBestSeller,
+  DSales
+} from '~/components/home'
 
 export default {
   components: {
@@ -20,7 +28,9 @@ export default {
     DBanner,
     DFashion,
     DFilter,
-    DBestSeller
+    DBestSeller,
+    DSales,
+    DFooter
   }
 }
 </script>

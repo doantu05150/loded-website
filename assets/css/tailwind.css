@@ -1,3 +1,10 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@variants hover, focus {
+  .scale-110 {
+    transform: scale(1.01);
+    transition: transform .25s ease;
+  }
+}
