@@ -2,8 +2,8 @@
   <div>
     <img
       src="~/assets/images/photo-first.jpg"
-      class="h-auto max-w-full"
-      alt="image banner mb-10"
+      class="h-auto max-w-full mt-6"
+      alt="image banner"
     />
     <div class="text-center uppercase">
       <div class="font-section text-4xl text-black-600 mt-12">

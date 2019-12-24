@@ -47,7 +47,7 @@
       <div class="uppercase text-5xl font-bold font-branch">loded</div>
       <div class="rh-box flex-1" />
     </div>
-    <div class="relative navbar flex pt-2 pb-5">
+    <div class="relative navbar flex pt-2">
       <ul class="flex items-center mx-auto text-sm text-gray-800">
         <li
           v-for="(item, id) in listNavs"
