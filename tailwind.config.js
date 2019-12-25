@@ -27,6 +27,9 @@ module.exports = {
       },
       inset: {
         '100ps': '100%'
+      },
+      justifyContent: {
+        evenly: 'evenly'
       }
     },
     fontFamily: {

@@ -57,7 +57,7 @@
           <router-link to="#" class="uppercase">{{ item.title }}</router-link>
           <d-expand-wrapper>
             <template v-slot:content>
-              <h1>aaaa {{ id }}</h1>
+              <d-sub-men />
             </template>
           </d-expand-wrapper>
         </li>
@@ -68,10 +68,12 @@
 
 <script>
 import DExpandWrapper from './HeaderExpand'
+import { DSubMen } from './submenu'
 
 export default {
   components: {
-    DExpandWrapper
+    DExpandWrapper,
+    DSubMen
   },
   data() {
     return {
@@ -93,6 +95,9 @@ export default {
         },
         {
           title: `man's faction`
+        },
+        {
+          title: `sales`
         }
       ]
     }
