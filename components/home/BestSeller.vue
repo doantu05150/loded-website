@@ -25,15 +25,17 @@
                   class="h-auto max-w-full hover:scale-110 mb-2"
                   alt=""
                 />
-                <div class="text-base text-gray-900">Knit dress</div>
+                <div class="text-sm md:text-base text-gray-900">Knit dress</div>
                 <div class="flex justify-center items-center">
                   <div
-                    :class="true && 'line-through text-sm'"
+                    :class="true && 'line-through text-xs md:text-sm'"
                     class="font-bold text-black"
                   >
                     99$
                   </div>
-                  <div class="ml-4 font-bold text-red-600">69$</div>
+                  <div class="ml-4 text-xs md:text-sm font-bold text-red-600">
+                    69$
+                  </div>
                 </div>
               </div>
             </template>

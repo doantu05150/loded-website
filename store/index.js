@@ -6,22 +6,55 @@ Vue.use(Vuex)
 export const state = () => ({
   menu: [
     {
+      title: 'gifts',
+      link: '#',
+      submenu: [
+        {
+          title: 'Submenu 1',
+          link: '#'
+        },
+        {
+          title: 'Submenu 1',
+          link: '#'
+        }
+      ]
+    },
+    {
+      title: `women's faction`,
+      link: '#',
+      submenu: [
+        {
+          title: 'Submenu 1',
+          link: '#'
+        },
+        {
+          title: 'Submenu 1',
+          link: '#'
+        }
+      ]
+    },
+    {
+      title: `men's faction`
+    },
+    {
       title: 'gifts'
     },
     {
       title: `women's faction`
     },
     {
-      title: `man's faction`
-    },
-    {
-      title: 'gifts'
-    },
-    {
-      title: `women's faction`
-    },
-    {
-      title: `man's faction`
+      title: `men's faction`,
+      link: '#',
+      submenu: [
+        {
+          title: 'Submenu 1',
+          link: '#'
+        },
+        {
+          title: 'Submenu 1',
+          link: '#'
+        }
+      ]
     },
     {
       title: `sales`
