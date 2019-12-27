@@ -12,6 +12,7 @@
           :bullets="false"
           :breakpoints="breakpoints"
           slide-multiple
+          autoplay
           class="no-shadow"
         >
           <vueper-slide v-for="i in 6" :key="i">
@@ -56,6 +57,7 @@ export default {
         1024: {
           visibleSlides: 3,
           slideRatio: 57 / 100,
+          arrows: false,
           bullets: false
         },
         640: {

@@ -1,6 +1,6 @@
 <template>
   <client-only>
-    <div class="bg-white w-full z-10 overflow-hidden">
+    <div class="bg-white w-full z-10">
       <div class="hidden md:block py-1 bg-header-address">
         <div class="flex w-main-wrapper mx-auto">
           <div class="pl-10">
