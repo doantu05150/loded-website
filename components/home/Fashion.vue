@@ -1,7 +1,10 @@
 <template>
   <div>
-    <div class="mb-16">
-      <d-title classes="text-center mt-16 mb-8">the party-season edit</d-title>
+    <div class="mb-2 sm:mb-4 md:mb-10 lg:mb-16 overflow-hidden">
+      <d-title
+        classes="text-center mt-0 sm:mt-4 md:mt-8 lg:mt-16 mb-2 sm:4 lg:mb-8"
+        >the party-season edit</d-title
+      >
       <div class="flex">
         <div
           v-for="(item, id) in season"
@@ -11,9 +14,11 @@
           <img
             :src="item.img"
             :alt="item.name"
-            class="h-auto max-w-full mb-3"
+            class="h-auto max-w-full mb-0 md:mb-3"
           />
-          <router-link to="#" class="uppercase text-sm hover:text-gray-800"
+          <router-link
+            to="#"
+            class="uppercase text-xxs md:text-sm hover:text-gray-800"
             >shop now</router-link
           >
         </div>

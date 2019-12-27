@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="mb-16">
+    <div class="mb-2 sm:mb-4 md:mb-10 lg:mb-16 overflow-hidden">
       <div class="flex">
         <div
           v-for="(item, id) in season"

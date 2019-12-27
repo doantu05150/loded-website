@@ -1,5 +1,8 @@
 <template>
-  <div :class="classes" class="font-main text-4xl text-gray-900 uppercase">
+  <div
+    :class="classes"
+    class="font-main text-base sm:text-xl md:text-2xl lg:text-4xl text-gray-900 uppercase"
+  >
     <slot></slot>
   </div>
 </template>

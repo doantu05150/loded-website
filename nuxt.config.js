@@ -44,7 +44,11 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/fontawesome.js', '~/plugins/vueperslides.js'],
+  plugins: [
+    '~/plugins/fontawesome.js',
+    '~/plugins/vueperslides.js',
+    { src: '~/plugins/vue-unicons', mode: 'client' }
+  ],
   /*
    ** Nuxt.js dev-modules
    */

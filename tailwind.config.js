@@ -7,6 +7,9 @@
 module.exports = {
   theme: {
     extend: {
+      screens: {
+        hmb: '640px'
+      },
       colors: {
         'header-address': '#e5e5e5'
       },
@@ -17,10 +20,13 @@ module.exports = {
         'main-wrapper': '1800px'
       },
       fontSize: {
-        'default-button': '0.85rem'
+        'default-button': '0.85rem',
+        xxs: '0.5rem',
+        xxxs: '6px'
       },
       height: {
-        'fill-available': '-webkit-fill-available'
+        'fill-available': '-webkit-fill-available',
+        '60': '60px'
       },
       maxHeight: {
         '0': '0'
@@ -30,6 +36,9 @@ module.exports = {
       },
       justifyContent: {
         evenly: 'evenly'
+      },
+      lineHeight: {
+        zero: '0'
       }
     },
     fontFamily: {
