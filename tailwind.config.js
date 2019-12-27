@@ -39,6 +39,9 @@ module.exports = {
       },
       lineHeight: {
         zero: '0'
+      },
+      backgroundColor: {
+        blur: '#35353599'
       }
     },
     fontFamily: {

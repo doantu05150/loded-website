@@ -1,19 +1,14 @@
 <template>
   <div>
-    <d-header />
-    <div class="max-w-main-wrapper mx-auto">
-      <d-banner />
-      <d-sales />
-      <d-fashion />
-      <d-filter />
-      <d-best-seller />
-      <d-footer />
-    </div>
+    <d-banner />
+    <d-sales />
+    <d-fashion />
+    <d-filter />
+    <d-best-seller />
   </div>
 </template>
 
 <script>
-import { DHeader, DFooter } from '~/components/common'
 import {
   DBanner,
   DFashion,
@@ -23,14 +18,13 @@ import {
 } from '~/components/home'
 
 export default {
+  layout: 'main',
   components: {
-    DHeader,
     DBanner,
     DFashion,
     DFilter,
     DBestSeller,
-    DSales,
-    DFooter
+    DSales
   }
 }
 </script>

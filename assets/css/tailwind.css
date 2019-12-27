@@ -9,15 +9,24 @@
   }
 }
 
+/* hover on submenu */
 .transition-expand {
   transition: height 0.2s ease-in-out;
 }
-
 .navl:hover .navl-hover\:max-h-fit {
   max-height: fit-content;
 }
-
 .icon-top {
   top: -10px;
   right: -6px;
 }
+/* end */
+
+/* transition for drawer */
+.transition-opacity {
+  transition: opacity 1s;
+}
+.transition-content {
+  transition: width .5s;
+}
+/* end */

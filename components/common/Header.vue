@@ -33,10 +33,16 @@
         class="flex flex-col md:flex-row items-center w-main-wrapper mx-auto py-0 sm:py-2 px-0 sm:px-8"
       >
         <div
-          class="search-box bg-white fixed z-50 sm:z-auto sm:relative shadow-md sm:shadow-none w-full text-xs lg:text-base flex flex-1 px-3 sm:px-0 py-3 sm:py-0"
+          class="search-box bg-white fixed z-40 sm:z-auto sm:relative shadow-md sm:shadow-none w-full text-xs lg:text-base flex flex-1 px-3 sm:px-0 py-3 sm:py-0"
         >
           <div class="sm:hidden flex items-center">
-            <unicon name="bars" fill="#333" width="22" height="22" />
+            <unicon
+              @click="handleToggle"
+              name="bars"
+              fill="#333"
+              width="22"
+              height="22"
+            />
           </div>
           <div class="flex-1 sm:flex-none">
             <div class="relative mx-auto w-fit-content">
@@ -88,12 +94,12 @@
       <div class="hidden sm:flex relative navbar pt-2">
         <ul class="flex items-center mx-auto text-sm text-gray-800">
           <li
-            v-for="(item, id) in listNavs"
+            v-for="(item, id) in menu"
             :key="`nav_${id}`"
             class="navl hover:underline px-3"
           >
             <router-link
-              to="#"
+              to="/collections"
               class="uppercase text-xs md:text-sm lg:text-base"
               >{{ item.title }}</router-link
             >
@@ -110,6 +116,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import DExpandWrapper from './HeaderExpand'
 import { DSubMen } from './submenu'
 
@@ -118,31 +125,14 @@ export default {
     DExpandWrapper,
     DSubMen
   },
-  data() {
-    return {
-      listNavs: [
-        {
-          title: 'gifts'
-        },
-        {
-          title: `women's faction`
-        },
-        {
-          title: `man's faction`
-        },
-        {
-          title: 'gifts'
-        },
-        {
-          title: `women's faction`
-        },
-        {
-          title: `man's faction`
-        },
-        {
-          title: `sales`
-        }
-      ]
+  computed: {
+    ...mapGetters({
+      menu: 'menu'
+    })
+  },
+  methods: {
+    handleToggle() {
+      this.$emit('handleToggleDrawer')
     }
   }
 }
