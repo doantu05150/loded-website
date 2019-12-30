@@ -5,7 +5,7 @@
         v-for="(item, id) in categories.women.categories"
         :key="`cat_${id}`"
         to="#"
-        class="text-sm text-gray-800 py-1 hover:font-medium"
+        class="text-xs md:text-sm text-gray-800 py-1 hover:font-medium"
       >
         {{ item.title }}
       </router-link>
