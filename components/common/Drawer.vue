@@ -37,8 +37,13 @@
             </client-only>
           </div>
           <div
-            v-if="item.submenu && item.submenu.length && expandMenuNumber === i"
-            class="pl-3"
+            :style="{
+              maxHeight:
+                item.submenu && item.submenu.length && expandMenuNumber === i
+                  ? getSubDch
+                  : '0'
+            }"
+            class="uni-subc pl-3 transition-drawer-content overflow-hidden"
           >
             <div
               v-for="(sc, j) in item.submenu"
@@ -76,7 +81,11 @@ export default {
   computed: {
     ...mapGetters({
       menu: 'menu'
-    })
+    }),
+    getSubDch() {
+      const subs = this.$el.getElementsByClassName('uni-subc')
+      return subs[this.expandMenuNumber].scrollHeight + 'px'
+    }
   },
   methods: {
     handleToggleDrawer() {

@@ -47,6 +47,7 @@ export default {
   plugins: [
     '~/plugins/fontawesome.js',
     '~/plugins/vueperslides.js',
+    '~/plugins/vue-i18n.js',
     { src: '~/plugins/vue-unicons', mode: 'client' }
   ],
   /*

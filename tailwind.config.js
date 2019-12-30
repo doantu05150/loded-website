@@ -17,7 +17,8 @@ module.exports = {
         'fit-content': 'fit-content'
       },
       maxWidth: {
-        'main-wrapper': '1800px'
+        'main-wrapper': '1800px',
+        'coll-wapper': '1441px'
       },
       fontSize: {
         'default-button': '0.85rem',

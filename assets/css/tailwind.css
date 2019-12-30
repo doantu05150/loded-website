@@ -29,4 +29,7 @@
 .transition-content {
   transition: width .5s;
 }
+.transition-drawer-content {
+  transition: max-height 0.2s ease-in;
+}
 /* end */

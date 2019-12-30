@@ -5,7 +5,7 @@
       @handleToggleDrawer="handleToggleDrawer"
     />
     <d-header @handleToggleDrawer="handleToggleDrawer" />
-    <div class="max-w-main-wrapper mx-auto">
+    <div class="max-w-main-wrapper mx-auto px-2 md:px-4">
       <nuxt />
       <d-footer />
     </div>
