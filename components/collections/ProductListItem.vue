@@ -1,12 +1,14 @@
 <template>
   <div class="mb-5 overflow-hidden">
-    <router-link to="#" class="border-0 hover:border-1 border-gray-600">
+    <div class="border-0 hover:border-1 border-gray-600">
       <div class="flex relative overflow-hidden mb-2 px-2">
-        <img
-          src="https://s7d5.scene7.com/is/image/UrbanOutfitters/53899456_011_b?$medium$&qlt=80&fit=constrain"
-          class="h-auto max-w-full"
-          alt="product item"
-        />
+        <router-link to="/p/cardigan-black" class="cursor-pointer">
+          <img
+            src="https://s7d5.scene7.com/is/image/UrbanOutfitters/53899456_011_b?$medium$&qlt=80&fit=constrain"
+            class="h-auto max-w-full"
+            alt="product item"
+          />
+        </router-link>
         <div class="hidden sm:flex flex-col px-4 absolute right-0 bottom-0">
           <div
             class="rounded-full border border-solid border-white-600 p-2 md:p-3 leading-zero hover:bg-red-400 mb-3 md:mb-5"
@@ -20,7 +22,7 @@
           </div>
         </div>
       </div>
-    </router-link>
+    </div>
     <div class="text-center flex flex-col">
       <div class="font-bold text-red-700 text-xs md:text-base">
         New

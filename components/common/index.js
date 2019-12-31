@@ -11,3 +11,5 @@ export { default as DExpandWrapper } from './HeaderExpand'
 export { default as DDrawerWrapper } from './DrawerWrapper'
 
 export { default as DDrawer } from './Drawer'
+
+export { default as DDropdown } from './Dropdown'

@@ -12,7 +12,7 @@
           <d-list-categories />
         </div>
         <div class="flex-1">
-          <d-product-list />
+          <d-product-list class="mt-2" />
         </div>
       </div>
     </div>
