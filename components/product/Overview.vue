@@ -76,7 +76,6 @@ export default {
     },
     goToSlide(i) {
       this.indexSlide = i
-      console.log(this.indexSlide, i)
     }
   }
 }
