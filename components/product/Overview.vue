@@ -41,8 +41,14 @@
         </div>
       </div>
     </div>
-    <div class="mr-0 md:ml-2 flex-1 bg-orange-300">
-      bbb
+    <div class="mr-0 md:ml-2 flex-1">
+      <div class="flex">
+        <div
+          class="font-main text-base md:text-xl lg:text-2xl text-gray-900 uppercase text-center"
+        >
+          Candigan All Black
+        </div>
+      </div>
     </div>
   </div>
 </template>
