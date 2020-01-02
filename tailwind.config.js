@@ -8,13 +8,19 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        hmb: '640px'
+        hmb: '640px',
+        xs: '440px'
       },
       colors: {
         'header-address': '#e5e5e5'
       },
       width: {
-        'fit-content': 'fit-content'
+        'fit-content': 'fit-content',
+        wxl: '440px',
+        wlg: '380px',
+        wmd: '293px',
+        wsm: '210px',
+        sx: '110px'
       },
       maxWidth: {
         'main-wrapper': '1800px',
