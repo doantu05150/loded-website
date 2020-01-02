@@ -42,11 +42,20 @@
       </div>
     </div>
     <div class="mr-0 md:ml-2 flex-1">
-      <div class="flex">
+      <div class="flex flex-col">
         <div
-          class="font-main text-base md:text-xl lg:text-2xl text-gray-900 uppercase text-center"
+          class="font-main text-base md:text-xl lg:text-2xl text-gray-900 uppercase mb-3"
         >
           Candigan All Black
+        </div>
+        <div class="flex flex-row items-center">
+          <span class="font-main font-semibold text-base line-through mr-4"
+            >89 $</span
+          >
+          <span class="font-main font-semibold text-base text-red-700 mr-4"
+            >59 $</span
+          >
+          <div class="text-xs border border-gray-600 rounded-sm px-1">20%</div>
         </div>
       </div>
     </div>
