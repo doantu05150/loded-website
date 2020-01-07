@@ -32,7 +32,7 @@
             v-for="(item, id) in product.colors"
             :key="`color_${id}`"
             @click="changeColor(id)"
-            class="mr-3 mb-3"
+            class="mr-3 mb-3 cursor-pointer"
           >
             <a
               ><img
@@ -44,7 +44,7 @@
           </li>
         </ul>
       </div>
-      <div class="mt-6 mb-3">
+      <div class="mt-4 mb-3">
         <div class="mb-2">
           <span class="font-medium">Size:</span>
         </div>
@@ -53,11 +53,34 @@
             v-for="(item, id) in product.sizes"
             :key="`size_${id}`"
             @click="changeSize(id)"
-            class="mr-3 mb-3 p-2 border border-gray-700"
+            :class="
+              currentSize === id
+                ? 'border-2 border-gray-900 font-bold'
+                : 'border-2 border-gray-700'
+            "
+            :style="item.remainingAmount === 0 && 'pointer-events: none'"
+            class="sizes hover:border-gray-900"
           >
             <div>{{ item.name }}</div>
+            <div v-if="!item.remainingAmount">
+              <div class="slash slash-right"></div>
+              <div class="slash slash-left"></div>
+            </div>
           </li>
         </ul>
+      </div>
+      <div class="mt-4">
+        <button
+          class="bg-main hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full"
+        >
+          Add to bag
+        </button>
+      </div>
+      <div class="mt-4">
+        <div class="underline cursor-pointer text-xs mb-2">
+          What is my size?
+        </div>
+        <div>- DETAILS & CARE INSTRUCTIONS</div>
       </div>
     </div>
   </div>
@@ -123,3 +146,14 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus" scoped>
+@css {
+  .sizes {
+    @apply mr-3 mb-3 min-w-size min-h-size cursor-pointer text-xs flex justify-center items-center relative
+  }
+  .slash {
+    @apply h-px w-full bg-gray-600 absolute top-0 left-0 right-0 bottom-0 m-auto
+  }
+}
+</style>

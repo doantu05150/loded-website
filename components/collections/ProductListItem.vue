@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-5 overflow-hidden">
+  <div class="mb-5 py-2 overflow-hidden">
     <div class="border-0 hover:border-1 border-gray-600">
       <div class="flex relative overflow-hidden mb-2 px-2">
         <router-link to="/p/cardigan-black" class="cursor-pointer">

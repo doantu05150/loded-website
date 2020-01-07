@@ -86,7 +86,7 @@
           <div
             class="uppercase text-2xl md:text-3xl lg:text-5xl font-bold font-branch pt-2 sm:pt-0"
           >
-            loded
+            <img src="~/static/logo-2.jpg" class="w-logo" alt="logo" />
           </div>
         </router-link>
         <div class="rh-box flex-1" />

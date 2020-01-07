@@ -33,3 +33,12 @@
   transition: max-height 0.2s ease-in;
 }
 /* end */
+
+/* transition for slash */
+.slash-right {
+  transform: rotate(-45deg);
+}
+.slash-left {
+  transform: rotate(45deg);
+}
+/* end */

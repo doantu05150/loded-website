@@ -8,7 +8,7 @@
       <template v-slot:drawer-content>
         <router-link to="/">
           <div
-            class="uppercase text-center text-2xl font-bold font-branch text-gray-900 pb-2"
+            class="uppercase text-center text-2xl font-bold font-branch text-gray-900 pb-2 text-main"
           >
             loded
           </div>

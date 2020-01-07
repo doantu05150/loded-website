@@ -12,7 +12,8 @@ module.exports = {
         xs: '440px'
       },
       colors: {
-        'header-address': '#e5e5e5'
+        'header-address': '#e5e5e5',
+        main: '#c23874'
       },
       width: {
         'fit-content': 'fit-content',
@@ -20,11 +21,15 @@ module.exports = {
         wlg: '380px',
         wmd: '293px',
         wsm: '210px',
-        sx: '110px'
+        sx: '110px',
+        logo: '162px'
       },
       maxWidth: {
         'main-wrapper': '1800px',
         'coll-wapper': '1441px'
+      },
+      minWidth: {
+        size: '2.25rem'
       },
       fontSize: {
         'default-button': '0.85rem',
@@ -37,6 +42,9 @@ module.exports = {
       },
       maxHeight: {
         '0': '0'
+      },
+      minHeight: {
+        size: '2.25rem'
       },
       inset: {
         '100ps': '100%'
