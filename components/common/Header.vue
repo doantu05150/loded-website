@@ -60,7 +60,7 @@
           </div>
           <div class="relative flex items-center">
             <div
-              class="relative rounded-full border border-solid border-gray-700 p-1 lg:p-2 leading-zero mx-3"
+              class="relative cursor-pointer rounded-full border border-solid border-gray-700 p-1 lg:p-2 leading-zero mx-3"
             >
               <unicon name="heart" fill="#333" width="17" height="17" />
               <div
@@ -70,7 +70,7 @@
               </div>
             </div>
             <div
-              class="relative rounded-full border border-solid border-gray-700 p-1 lg:p-2 leading-zero"
+              class="relative cursor-pointer rounded-full border border-solid border-gray-700 p-1 lg:p-2 leading-zero"
             >
               <unicon name="cart" fill="#333" width="17" height="17" />
               <div

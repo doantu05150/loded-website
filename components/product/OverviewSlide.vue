@@ -23,15 +23,15 @@
           :breakpoints="breakpoints"
           :bullets="false"
           :arrows="false"
+          :touchable="false"
           speed="2500"
-          autoplay
         >
           <vueper-slide v-for="i in 4" :key="i">
             <template v-slot:content>
               <div>
                 <img
                   src="https://mediastorage.soliver.com/is/image/soliver/1279521.99D5_front?$CRL2_Zoom_grey_l$"
-                  class="h-auto w-full"
+                  class="h-auto w-full inline-block"
                   alt=""
                 />
               </div>

@@ -6,8 +6,17 @@ import {
   uniSearch,
   uniAngleDown,
   uniBars,
-  uniPlus
+  uniPlus,
+  uniTrash
 } from 'vue-unicons/src/icons'
 
-Unicon.add([uniHeart, uniCart, uniSearch, uniAngleDown, uniBars, uniPlus])
+Unicon.add([
+  uniHeart,
+  uniCart,
+  uniSearch,
+  uniAngleDown,
+  uniBars,
+  uniPlus,
+  uniTrash
+])
 Vue.use(Unicon)
