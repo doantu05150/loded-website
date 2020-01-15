@@ -11,12 +11,12 @@
         </router-link>
         <div class="hidden sm:flex flex-col px-4 absolute right-0 bottom-0">
           <div
-            class="rounded-full border border-solid border-white-600 p-2 md:p-3 leading-zero hover:bg-red-400 mb-3 md:mb-5"
+            class="rounded-full border border-solid border-white-600 cursor-pointer p-2 md:p-3 leading-zero hover:bg-red-400 mb-3 md:mb-5"
           >
             <unicon name="heart" fill="#fff" />
           </div>
           <div
-            class="rounded-full border border-solid border-white-600 p-2 md:p-3 leading-zero hover:bg-red-400 mb-3 md:mb-5"
+            class="rounded-full border border-solid border-white-600 cursor-pointer p-2 md:p-3 leading-zero hover:bg-red-400 mb-3 md:mb-5"
           >
             <unicon name="cart" fill="#fff" />
           </div>

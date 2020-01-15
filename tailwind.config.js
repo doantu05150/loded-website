@@ -22,7 +22,8 @@ module.exports = {
         wmd: '293px',
         wsm: '210px',
         sx: '110px',
-        logo: '162px'
+        logo: '162px',
+        '1/10': '10%'
       },
       maxWidth: {
         'main-wrapper': '1800px',

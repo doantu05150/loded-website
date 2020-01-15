@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full lg:w-3/4 mx-auto pt-10">
+  <div class="w-full lg:w-3/4 mx-auto sm:pt-10">
     <d-bag />
   </div>
 </template>

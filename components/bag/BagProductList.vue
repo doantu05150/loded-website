@@ -7,11 +7,11 @@
       <table class="table-fixed w-full">
         <thead>
           <tr>
-            <th class="w-3/5 px-4 py-2 text-sm">Item</th>
-            <th class="w-1/10 px-4 py-2 text-sm">Item Price</th>
-            <th class="w-1/10 px-4 py-2 text-sm">Quantity</th>
-            <th class="w-1/10 px-4 py-2 text-sm">Total Price</th>
-            <th class="w-1/10 px-4 py-2 text-sm">Remove</th>
+            <th class="w-3/5 px-4 py-2 text-xs">Item</th>
+            <th class="w-1/10 px-4 py-2 text-xs">Item Price</th>
+            <th class="w-1/10 px-4 py-2 text-xs">Quantity</th>
+            <th class="w-1/10 px-4 py-2 text-xs">Total Price</th>
+            <th class="w-1/10 px-4 py-2 text-xs">Remove</th>
           </tr>
         </thead>
         <tbody>
@@ -39,7 +39,7 @@
                 min="1"
                 max="10"
                 value="1"
-                class="w-16 border border-gray-500 text-center"
+                class="border border-gray-500 text-center"
               />
             </td>
             <td class="border text-center px-4 py-2">$59</td>
