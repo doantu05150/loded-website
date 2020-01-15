@@ -98,8 +98,8 @@ export default {
         name: 'Candigan All Black',
         title: 'Chunky knit cardigan with fine details',
         prices: {
-          original: 95,
-          current: 59,
+          original: 95.0,
+          current: 59.0,
           unit: '$'
         },
         discount: 20,

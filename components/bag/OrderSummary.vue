@@ -6,7 +6,7 @@
     <div class="flex flex-col">
       <div class="flex justify-between text-sm mb-3">
         <div>Subtotal</div>
-        <div>$59.00</div>
+        <div>{{ bag[0].product.prices.unit }}{{ getSubTotal }}</div>
       </div>
       <div class="flex justify-between text-sm mb-3">
         <div>Shipping</div>
@@ -20,7 +20,7 @@
         class="flex justify-between text-sm mb-3 mt-3 border-b border-gray-900 pb-4"
       >
         <div>Total</div>
-        <div>$59.00</div>
+        <div>{{ bag[0].product.prices.unit }}{{ getSubTotal }}</div>
       </div>
       <button
         @click="proceedToCheckout"
@@ -34,6 +34,21 @@
 
 <script>
 export default {
+  props: {
+    bag: {
+      type: Array,
+      required: true
+    }
+  },
+  computed: {
+    getSubTotal() {
+      let subTotal = 0
+      this.bag.forEach((bag) => {
+        subTotal += bag.product.prices.current * bag.amount
+      })
+      return subTotal
+    }
+  },
   methods: {
     proceedToCheckout() {
       this.$router.push('/checkout')

@@ -7,7 +7,8 @@ import {
   uniAngleDown,
   uniBars,
   uniPlus,
-  uniTrash
+  uniTrash,
+  uniMinus
 } from 'vue-unicons/src/icons'
 
 Unicon.add([
@@ -17,6 +18,7 @@ Unicon.add([
   uniAngleDown,
   uniBars,
   uniPlus,
-  uniTrash
+  uniTrash,
+  uniMinus
 ])
 Vue.use(Unicon)

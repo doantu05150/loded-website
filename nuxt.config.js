@@ -1,3 +1,5 @@
+import webpack from 'webpack'
+
 export default {
   mode: 'universal',
   /*
@@ -79,6 +81,12 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {},
+    plugins: [
+      new webpack.ProvidePlugin({
+        // global modules
+        _: 'lodash'
+      })
+    ],
     postcss: {
       // Add plugin names as key and arguments as value
       // Install them before as dependencies with npm or yarn

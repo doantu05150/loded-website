@@ -70,13 +70,14 @@
               </div>
             </div>
             <div
+              @click="$router.push('/bag')"
               class="relative cursor-pointer rounded-full border border-solid border-gray-700 p-1 lg:p-2 leading-zero"
             >
               <unicon name="cart" fill="#333" width="17" height="17" />
               <div
                 class="absolute icon-top bg-red-500 font-bold text-white rounded-full h-4 w-4 lg:h-5 lg:w-5 flex items-center justify-center"
               >
-                3
+                {{ bag.length }}
               </div>
             </div>
           </div>
@@ -127,7 +128,8 @@ export default {
   },
   computed: {
     ...mapGetters({
-      menu: 'menu'
+      menu: 'menu',
+      bag: 'bag/bag'
     })
   },
   methods: {

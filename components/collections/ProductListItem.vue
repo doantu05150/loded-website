@@ -16,6 +16,7 @@
             <unicon name="heart" fill="#fff" />
           </div>
           <div
+            @click="addBag"
             class="rounded-full border border-solid border-white-600 cursor-pointer p-2 md:p-3 leading-zero hover:bg-red-400 mb-3 md:mb-5"
           >
             <unicon name="cart" fill="#fff" />
@@ -55,6 +56,11 @@ export default {
             'https://s7d5.scene7.com/is/image/UrbanOutfitters/53382388_011_b?$medium$&qlt=80&fit=constrain'
         }
       ]
+    }
+  },
+  methods: {
+    addBag(fakeProduct) {
+      this.$emit('addBag')
     }
   }
 }
