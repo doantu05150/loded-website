@@ -58,6 +58,9 @@ module.exports = {
       },
       backgroundColor: {
         blur: '#35353599'
+      },
+      spacing: {
+        '2/5': '40%'
       }
     },
     fontFamily: {

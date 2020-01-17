@@ -1,14 +1,51 @@
 <template>
   <div>
-    <div class="border border-bg-gray-500 z-10 bg-white">
-      <div slot="button" class="mb-3">
-        <button class="font-light text-sm px-3 py-2">Categories</button>
-        <unicon name="angle-down" class="float-right" fill="#cecece" />
-      </div>
-      <div class="px-4 pb-2 left-0 bg-white w-full">
-        <div>hhh</div>
-        <div>vvv</div>
+    <div class="group inline-block relative w-full mb-4">
+      <button
+        class="border border-gray-500 text-gray-700 py-2 px-4 rounded inline-flex items-center text-left w-full z-10"
+      >
+        <span class="mr-1 flex-1">{{ value ? value : title }}</span>
+        <unicon name="angle-down" fill="#333" />
+      </button>
+      <div
+        class="absolute hidden group-hover:dropdown pt-1 bg-white w-full z-20"
+      >
+        <ul class="text-gray-700 border border-gray-500 rounded w-full">
+          <li v-for="(item, i) in data" :key="i">
+            <a
+              @click="changeValue(item.title)"
+              class="hover:bg-blue-500 hover:text-white px-2 w-full block whitespace-no-wrap"
+              >{{ item.title }}</a
+            >
+          </li>
+        </ul>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    title: {
+      type: String,
+      default: 'Dropdown'
+    },
+    data: {
+      type: Array,
+      required: true
+    }
+  },
+  data() {
+    return {
+      value: ''
+    }
+  },
+  methods: {
+    changeValue(value) {
+      this.value = value
+      this.$emit('changeValue', value)
+    }
+  }
+}
+</script>

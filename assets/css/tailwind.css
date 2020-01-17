@@ -8,6 +8,21 @@
     transition: transform .25s ease;
   }
 }
+@variants group-hover {
+  .dropdown {
+    display: block;
+  }
+}
+
+/* define main color */
+.d-color {
+  background: #c23874;
+  opacity: 80%;
+}
+.d-color-strong {
+  opacity: 90%
+}
+/* end */
 
 /* hover on submenu */
 .transition-expand {
