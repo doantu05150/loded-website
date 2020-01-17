@@ -25,7 +25,7 @@
       <input
         type="text"
         placeholder="Address"
-        class="w-full h-10 px-4 border border-gray-500 rounded-lg focus:outline-none"
+        class="w-full h-12 px-4 border border-gray-500 rounded-lg focus:outline-none"
       />
     </div>
   </div>

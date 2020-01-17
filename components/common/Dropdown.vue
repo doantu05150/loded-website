@@ -2,7 +2,7 @@
   <div>
     <div class="group inline-block relative w-full mb-4">
       <button
-        class="border border-gray-500 text-gray-700 py-2 px-4 rounded inline-flex items-center text-left w-full z-10"
+        class="border border-gray-500 text-gray-700 py-3 px-4 rounded inline-flex items-center text-left w-full z-10"
       >
         <span class="mr-1 flex-1">{{ value ? value : title }}</span>
         <unicon name="angle-down" fill="#333" />
