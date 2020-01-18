@@ -44,21 +44,23 @@
               height="22"
             />
           </div>
-          <div class="flex-1 sm:flex-none">
+          <div class="hidden sm:flex">
             <div class="relative mx-auto w-fit-content">
               <input
                 type="text"
-                class="relative border border-solid border-gray-700 rounded-full focus:outline-none py-2 pl-4 pr-8 sm:pr-16"
+                class="relative border border-solid border-gray-700 text-gray-700 rounded-full focus:outline-none py-1 pl-4 pr-8 sm:pr-16"
                 placeholder="Search product on loded.com"
               />
               <div
                 class="absolute h-full flex items-center right-0 top-0 pr-2 sm:pr-6"
               >
-                <unicon name="search" fill="#909090" width="21" height="21" />
+                <unicon name="search" fill="#909090" width="19" height="19" />
               </div>
             </div>
           </div>
-          <div class="relative flex items-center">
+          <div
+            class="relative flex flex-1 sm:flex-none justify-end items-center"
+          >
             <div
               class="relative cursor-pointer rounded-full border border-solid border-gray-700 p-1 lg:p-2 leading-zero mx-3"
             >

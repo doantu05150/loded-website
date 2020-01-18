@@ -66,6 +66,20 @@ export default {
   },
   methods: {
     hideDrawer(e) {
+      if (e.path[1] && e.path[1].id === 'drawer-search') {
+        return
+      }
+      if (e.target.localName === 'input') {
+        return
+        // search here
+      }
+      if (
+        e.path[1].className &&
+        typeof e.path[1].className.includes !== 'undefined' &&
+        e.path[1].className.includes('expand-button')
+      ) {
+        return
+      }
       if (e.target.id !== 'bbmToggle') {
         this.$emit('handleToggleDrawer')
       }

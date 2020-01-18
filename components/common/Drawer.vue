@@ -13,11 +13,30 @@
             loded
           </div>
         </router-link>
+        <div class="my-2">
+          <div class="relative mx-auto w-fit-content">
+            <input
+              type="text"
+              class="relative border border-solid border-gray-700 text-gray-700 rounded-full focus:outline-none py-1 pl-4 pr-8 sm:pr-16"
+              placeholder="Search product on loded.com"
+            />
+            <div
+              class="absolute h-full flex items-center right-0 top-0 pr-2 sm:pr-6"
+            >
+              <unicon
+                id="drawer-search"
+                name="search"
+                fill="#909090"
+                width="19"
+                height="19"
+              />
+            </div>
+          </div>
+        </div>
         <div
           v-for="(item, i) in menu"
           :key="`nav_link${i}`"
-          @click="handleToggleDrawer"
-          class="py-2 px-3 whitespace-no-wrap border-t last:border-b border-gray-700"
+          class="py-2 px-3 whitespace-no-wrap border-b border-gray-700"
         >
           <div class="flex items-center">
             <nuxt-link
@@ -30,6 +49,7 @@
                 v-if="item.submenu && item.submenu.length"
                 @click="expandSubmenu(i)"
                 :name="`plus`"
+                class="expand-button"
                 fill="#333"
                 width="16"
                 height="16"
