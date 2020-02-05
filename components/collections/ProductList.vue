@@ -92,6 +92,150 @@ export default {
               remainingAmount: 10
             }
           ]
+        },
+        {
+          code: 'Mlaxh2va3',
+          name: 'Candigan All Black',
+          title: 'Chunky knit cardigan with fine details',
+          prices: {
+            original: 95.0,
+            current: 59.0,
+            unit: '$'
+          },
+          discount: 20,
+          colors: [
+            {
+              image:
+                'https://images.urbanoutfitters.com/is/image/UrbanOutfitters/53382388_011_s',
+              name: 'Ivory'
+            }
+          ],
+          sizes: [
+            {
+              name: 'XS',
+              remainingAmount: 10
+            }
+          ]
+        },
+        {
+          code: 'Mlaxh2va3',
+          name: 'Candigan All Black',
+          title: 'Chunky knit cardigan with fine details',
+          prices: {
+            original: 95.0,
+            current: 59.0,
+            unit: '$'
+          },
+          discount: 20,
+          colors: [
+            {
+              image:
+                'https://images.urbanoutfitters.com/is/image/UrbanOutfitters/53382388_011_s',
+              name: 'Ivory'
+            }
+          ],
+          sizes: [
+            {
+              name: 'XS',
+              remainingAmount: 10
+            }
+          ]
+        },
+        {
+          code: 'Mlaxh2va3',
+          name: 'Candigan All Black',
+          title: 'Chunky knit cardigan with fine details',
+          prices: {
+            original: 95.0,
+            current: 59.0,
+            unit: '$'
+          },
+          discount: 20,
+          colors: [
+            {
+              image:
+                'https://images.urbanoutfitters.com/is/image/UrbanOutfitters/53382388_011_s',
+              name: 'Ivory'
+            }
+          ],
+          sizes: [
+            {
+              name: 'XS',
+              remainingAmount: 10
+            }
+          ]
+        },
+        {
+          code: 'Mlaxh2va3',
+          name: 'Candigan All Black',
+          title: 'Chunky knit cardigan with fine details',
+          prices: {
+            original: 95.0,
+            current: 59.0,
+            unit: '$'
+          },
+          discount: 20,
+          colors: [
+            {
+              image:
+                'https://images.urbanoutfitters.com/is/image/UrbanOutfitters/53382388_011_s',
+              name: 'Ivory'
+            }
+          ],
+          sizes: [
+            {
+              name: 'XS',
+              remainingAmount: 10
+            }
+          ]
+        },
+        {
+          code: 'Mlaxh2va3',
+          name: 'Candigan All Black',
+          title: 'Chunky knit cardigan with fine details',
+          prices: {
+            original: 95.0,
+            current: 59.0,
+            unit: '$'
+          },
+          discount: 20,
+          colors: [
+            {
+              image:
+                'https://images.urbanoutfitters.com/is/image/UrbanOutfitters/53382388_011_s',
+              name: 'Ivory'
+            }
+          ],
+          sizes: [
+            {
+              name: 'XS',
+              remainingAmount: 10
+            }
+          ]
+        },
+        {
+          code: 'Mlaxh2va3',
+          name: 'Candigan All Black',
+          title: 'Chunky knit cardigan with fine details',
+          prices: {
+            original: 95.0,
+            current: 59.0,
+            unit: '$'
+          },
+          discount: 20,
+          colors: [
+            {
+              image:
+                'https://images.urbanoutfitters.com/is/image/UrbanOutfitters/53382388_011_s',
+              name: 'Ivory'
+            }
+          ],
+          sizes: [
+            {
+              name: 'XS',
+              remainingAmount: 10
+            }
+          ]
         }
       ]
     }

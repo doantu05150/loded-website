@@ -25,7 +25,7 @@
             </div>
             <div class="text-xs">XS</div>
           </div>
-          <div class="w-16">${{ item.product.prices.current }}</div>
+          <div class="w-16">${{ getPriceWithAmount(item) }}</div>
         </div>
       </div>
       <div class="flex py-4 border-b border-gray-400">
@@ -43,16 +43,16 @@
       <div class="py-4 border-b border-gray-400">
         <div class="flex justify-between my-1">
           <div>Subtotal:</div>
-          <div>$549</div>
+          <div>${{ computeSubtotal }}</div>
         </div>
         <div class="flex justify-between my-1">
           <div>Shipping cost:</div>
-          <div>$12</div>
+          <div>${{ getShippingCost() }}</div>
         </div>
       </div>
       <div class="flex justify-between text-xl font-medium my-1">
         <div>Total:</div>
-        <div>$561</div>
+        <div>${{ computeTotalWithShippingCost }}</div>
       </div>
     </div>
   </div>
@@ -65,7 +65,23 @@ export default {
   computed: {
     ...mapGetters({
       bag: 'bag/bag'
-    })
+    }),
+    computeSubtotal() {
+      return this.bag.reduce((acc, val) => {
+        return acc + val.amount * val.product.prices.current
+      }, 0)
+    },
+    computeTotalWithShippingCost() {
+      return this.computeSubtotal + this.getShippingCost()
+    }
+  },
+  methods: {
+    getPriceWithAmount(item) {
+      return item.product.prices.current * item.amount
+    },
+    getShippingCost() {
+      return 5
+    }
   }
 }
 </script>
