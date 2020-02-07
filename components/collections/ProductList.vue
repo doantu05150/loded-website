@@ -1,12 +1,14 @@
 <template>
-  <div>
+  <div v-lazy-container="{ selector: 'img' }">
     <div class="flex flex-wrap overflow-hidden">
-      <d-product-list-item
-        v-for="(item, i) in products"
-        :key="i"
-        @addBag="addBag(item)"
-        class="w-1/2 sm:w-1/3 lg:w-1/4"
-      />
+      <client-only>
+        <d-product-list-item
+          v-for="(item, i) in products"
+          :key="i"
+          @addBag="addBag(item)"
+          class="w-1/2 sm:w-1/3 lg:w-1/4"
+        />
+      </client-only>
     </div>
   </div>
 </template>

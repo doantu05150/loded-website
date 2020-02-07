@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-lazy-container="{ selector: 'img' }">
     <d-banner />
     <d-sales />
     <d-fashion />

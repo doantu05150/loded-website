@@ -8,7 +8,7 @@
           class="w-1/2"
         >
           <img
-            :src="item.img"
+            :data-src="item.img"
             :alt="item.name"
             class="h-auto max-w-full mb-3"
           />

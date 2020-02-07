@@ -21,7 +21,7 @@
                 class="mx-2 flex flex-col justify-center text-center h-fill-available"
               >
                 <img
-                  src="https://mediastorage.soliver.com/is/image/soliver/1278959.99Q0_front?$CONTENT_COMMA_SLIDER-XL$"
+                  data-src="https://mediastorage.soliver.com/is/image/soliver/1278959.99Q0_front?$CONTENT_COMMA_SLIDER-XL$"
                   class="h-auto max-w-full hover:scale-110 mb-2"
                   alt=""
                 />

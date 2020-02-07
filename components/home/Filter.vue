@@ -6,7 +6,7 @@
       <div v-for="(item, id) in categories" :key="`cat_${id}`" class="mx-1">
         <img
           :alt="item.name"
-          src="~/assets/images/w-cat-jeans-dt.jpg"
+          data-src="~/assets/images/w-cat-jeans-dt.jpg"
           class="rounded-full"
         />
         <div class="text-center">

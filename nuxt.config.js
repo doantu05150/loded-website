@@ -50,7 +50,8 @@ export default {
     '~/plugins/fontawesome.js',
     '~/plugins/vueperslides.js',
     '~/plugins/vue-i18n.js',
-    { src: '~/plugins/vue-unicons', mode: 'client' }
+    { src: '~/plugins/vue-unicons', mode: 'client' },
+    { src: '~/plugins/vue-lazyload.js', ssr: false }
   ],
   /*
    ** Nuxt.js dev-modules

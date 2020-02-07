@@ -12,7 +12,7 @@
           class="w-1/3 mx-1 text-center"
         >
           <img
-            :src="item.img"
+            :data-src="item.img"
             :alt="item.name"
             class="h-auto max-w-full mb-0 md:mb-3"
           />

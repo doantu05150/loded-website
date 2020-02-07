@@ -4,7 +4,7 @@
       <div class="flex relative overflow-hidden mb-2 px-2">
         <router-link to="/p/cardigan-black" class="cursor-pointer">
           <img
-            src="https://s7d5.scene7.com/is/image/UrbanOutfitters/53899456_011_b?$medium$&qlt=80&fit=constrain"
+            data-src="https://s7d5.scene7.com/is/image/UrbanOutfitters/53899456_011_b?$medium$&qlt=80&fit=constrain"
             class="h-auto max-w-full"
             alt="product item"
           />

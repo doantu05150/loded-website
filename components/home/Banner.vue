@@ -3,7 +3,7 @@
     <div class="relative pb-2/5 mt-2 sm:mt-6">
       <img
         class="absolute h-full w-full object-cover"
-        src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80"
+        data-src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80"
         alt="property.image.banner"
       />
     </div>
