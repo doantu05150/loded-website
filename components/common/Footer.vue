@@ -13,6 +13,7 @@
         <div class="w-full md:w-1/4 mb-2">
           <font-awesome-icon
             :icon="['fab', 'facebook-square']"
+            @click="loginWithFacebook"
             style="color: #4c4c4c; font-size: 2rem"
             class="mr-3"
           />
@@ -63,3 +64,15 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    async loginWithFacebook() {
+      await this.$auth.loginWith('facebook').catch((e) => {
+        this.$toast.show('Error Login', { icon: 'fingerprint' })
+      })
+    }
+  }
+}
+</script>
