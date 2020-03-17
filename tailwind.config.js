@@ -66,7 +66,8 @@ module.exports = {
     fontFamily: {
       main: ['Quicksand', 'sans-serif'],
       branch: ['Inria Serif', 'serif'],
-      section: ['Roboto Mono', 'monospace']
+      section: ['Roboto Mono', 'monospace'],
+      item: ['Montserrat', 'sans-serif']
     }
   },
   variants: {},
