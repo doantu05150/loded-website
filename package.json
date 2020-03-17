@@ -1,7 +1,7 @@
 {
   "name": "loded",
   "version": "1.0.0",
-  "description": "My premium Nuxt.js project",
+  "description": "The website for my lover",
   "author": "DoanTu",
   "private": true,
   "scripts": {
@@ -28,6 +28,7 @@
     "@nuxtjs/axios": "^5.9.5",
     "lodash": "^4.17.15",
     "nuxt": "^2.0.0",
+    "nuxt-purgecss": "^0.2.1",
     "prerender-node": "^3.2.5",
     "react-native-vector-icons": "^6.6.0",
     "vue-i18n": "^8.15.3",

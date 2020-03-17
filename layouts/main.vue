@@ -1,13 +1,21 @@
 <template>
   <div>
-    <d-drawer
-      :showDrawer="showDrawer"
-      @handleToggleDrawer="handleToggleDrawer"
-    />
-    <d-header @handleToggleDrawer="handleToggleDrawer" />
-    <div class="max-w-main-wrapper mx-auto px-2 md:px-4">
-      <nuxt />
-      <d-footer />
+    <div
+      v-if="loading"
+      class="h-screen w-full flex justify-center items-center"
+    >
+      <div class="lds-heart"><div></div></div>
+    </div>
+    <div v-else>
+      <d-drawer
+        :showDrawer="showDrawer"
+        @handleToggleDrawer="handleToggleDrawer"
+      />
+      <d-header @handleToggleDrawer="handleToggleDrawer" />
+      <div class="max-w-main-wrapper mx-auto px-2 md:px-4">
+        <nuxt />
+        <d-footer />
+      </div>
     </div>
   </div>
 </template>
@@ -24,8 +32,15 @@ export default {
   },
   data() {
     return {
-      showDrawer: false
+      showDrawer: false,
+      loading: true
     }
+  },
+  created() {
+    this.loading = true
+  },
+  mounted() {
+    this.loading = false
   },
   methods: {
     handleToggleDrawer() {
@@ -34,3 +49,7 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+@import '@/static/css/heart-indicator.css';
+</style>

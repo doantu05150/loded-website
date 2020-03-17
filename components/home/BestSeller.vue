@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <client-only>
     <div class="mb-2 sm:mb-4 md:mb-10 lg:mb-16 overflow-hidden">
       <d-title
         classes="text-center mt-0 sm:mt-4 md:mt-8 lg:mt-16 mb-2 sm:4 lg:mb-8"
@@ -43,7 +43,7 @@
         </vueper-slides>
       </div>
     </div>
-  </div>
+  </client-only>
 </template>
 
 <script>

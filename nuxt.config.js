@@ -68,7 +68,8 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/auth'
+    '@nuxtjs/auth',
+    'nuxt-purgecss'
   ],
   auth: {
     strategies: {
@@ -116,5 +117,15 @@ export default {
         }
       }
     }
+  },
+  purgeCSS: {
+    extractors: () => [
+      {
+        extractor(content) {
+          return content.match(/[A-z0-9-:\\/]+/g)
+        },
+        extensions: ['html', 'vue', 'js']
+      }
+    ]
   }
 }
